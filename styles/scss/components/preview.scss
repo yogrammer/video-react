@@ -1,0 +1,37 @@
+.video-react .video-react-mouse-preview-image {
+  pointer-events: none;
+  position: absolute;
+  top: -114px;
+  right: -90px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 180px;
+  height: 101.25px;
+  @include background-color-with-alpha(#fff, 0.01);
+  @include border-radius(0.3em);
+}
+
+.video-react .video-react-mouse-preview-time {
+  position: absolute;
+  bottom: 17px;
+  left: 0;
+  transform: translateX(-50%);
+  font-size: 0.6em;
+  color: #fff;
+  padding: 3px 6px;
+  @include background-color-with-alpha(#000, 0.8);
+  @include border-radius(0.3em);
+}
+
+.video-react .video-react-progress-control .video-react-mouse-preview {
+  display: none;
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+  z-index: 1;
+}
+
+.video-react .video-react-progress-control:hover .video-react-mouse-preview {
+  display: block;
+}
